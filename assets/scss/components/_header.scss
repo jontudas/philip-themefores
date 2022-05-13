@@ -1,0 +1,29 @@
+
+@use '../abstracts/variables' as *;
+
+/*
+************
+*************************
+02. Header
+******************************************************* 
+*************************************************************** */
+
+.header-sticky {
+    &:is(.sticky) {
+        position: fixed;
+        top: 0;
+        background-color: #fff;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        transition: 0.5s;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        animation: 800ms ease-in-out 0s normal none 1 running fadeInDown;
+        width: 100%;
+        border-bottom: 0px;
+    }
+}
+
+h2 {
+    color: greenyellow;
+}
