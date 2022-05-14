@@ -1705,7 +1705,7 @@ ul {
   -webkit-box-shadow: 0px 13px 29px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 13px 29px rgba(0, 0, 0, 0.05);
   padding: 15px 0;
-  border-top: 5px solid #f94d1c;
+  border-top: 5px solid #5F41FF;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: 0.3s;
@@ -1731,7 +1731,7 @@ ul {
   width: 10px;
   height: 2px;
   content: "";
-  background-color: #f94d1c;
+  background-color: #5F41FF;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   opacity: 0;
@@ -1770,7 +1770,7 @@ ul {
   content: "";
   font-family: "Font Awesome 5 Pro";
   font-weight: 500;
-  color: #2481ce;
+  color: #5F41FF;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   opacity: 0;
@@ -1788,7 +1788,7 @@ ul {
 }
 
 .philip_main_menu li:hover > a {
-  color: #f94d1c;
+  color: #5F41FF;
 }
 
 .philip_main_menu li:hover ul.sub-menu {
