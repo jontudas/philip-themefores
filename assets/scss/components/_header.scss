@@ -7,7 +7,10 @@
 02. Header
 ******************************************************* 
 *************************************************************** */
-
+.philip-header-area {
+  color: red;
+  background-color: red;
+}
 .header-sticky {
     &:is(.sticky) {
         position: fixed;
