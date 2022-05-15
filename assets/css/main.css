@@ -1758,7 +1758,9 @@ ul {
   font-family: "Poppins", sans-serif;
   color: #1a1a1a;
 }
-
+.philip_main_menu li ul.sub-menu li a {
+  padding: 0;
+}
 .philip_main_menu li ul.sub-menu {
   position: absolute;
   left: 0;
@@ -1767,20 +1769,38 @@ ul {
   background-color: #fff;
   -webkit-box-shadow: 0px 13px 29px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 13px 29px rgba(0, 0, 0, 0.05);
-  padding: 15px 0;
+  padding: 26px 30px;
   border-top: 5px solid #5F41FF;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+.sub-menu-three {
+  background: #fff;
+  position: absolute;
+  left: 188px;
+  top: 0;
+  box-shadow: 0px 13px 29px rgba(0, 0, 0, 0.05);
+  padding: 26px 30px;
+  border-top: 5px solid #5F41FF;
+  width: 250px;
+}
+.sub-menu li ul.sub-menu-three {
+  visibility: hidden;
+}
+.sub-menu li:hover ul.sub-menu-three {
+  visibility: visible;
+}
 
 .philip_main_menu li ul.sub-menu li {
   display: block;
+  margin: 0;
+  margin-bottom: 24px;
 }
 
+
 .philip_main_menu li ul.sub-menu li a {
-  padding: 5px 25px;
   position: relative;
   text-align: start;
 }
@@ -1835,7 +1855,7 @@ ul {
 }
 
 .philip_main_menu li:not(:last-child) {
-  margin-right: 43px;
+  margin: 0 21.5px;
 }
 .philip_quick_contact-nav {
   margin-left: 40px;
@@ -1846,9 +1866,9 @@ ul {
 .philip_quick_contact {
   color: black
 }
-.philip_main_menu li:is(.has-menu-children) {
+/* .philip_main_menu li:is(.has-menu-children) {
   margin-right: 50px;
-}
+} */
 
 /* banner css  */
 .philip-banner-area {
