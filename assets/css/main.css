@@ -366,6 +366,10 @@ input:focus::placeholder, textarea:focus::placeholder {
 .mt-15 {
   margin-top: 15px;
 }
+.mt-16 {
+  margin-top: 16px;
+}
+
 
 .mt-20 {
   margin-top: 20px;
@@ -846,7 +850,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   margin-right: 10px;
 }
 
-.mr-15 {
+.mr-16 {
   margin-right: 15px;
 }
 
@@ -864,6 +868,9 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 .mr-35 {
   margin-right: 35px;
+}
+.mr-38 {
+  margin-right: 38px;
 }
 
 .mr-40 {
@@ -1884,9 +1891,11 @@ ul {
   font-weight: 400;
   text-transform: capitalize;
 }
-.philip-video {
-  margin-right: 20px;
-  margin-left: 38px;
+.philip-video-watch span {
+  display: block;
+}
+.philip-video-watch p {
+  margin: 0;
 }
 .philp-heading {
   font-size: 80px;
@@ -1906,10 +1915,17 @@ ul {
 .philip-button a {
   background-color: #5F41FF;
   color: #fff;
+  border: 1px solid #5F41FF;
   text-decoration: navajowhite;
   padding: 20px 59px;
   display: inline-block;
   border-radius: 8px;
+}
+.philip-button a:hover {
+  background-color: #fff;
+  color: #5F41FF;
+  border: 1px solid #5F41Ff;
+  transition: .5s;
 }
 .video-button span {
   border: 10px solid #4168FF12;
@@ -1923,6 +1939,66 @@ ul {
   border-radius: 50%;
   color: #5F41FF;
 }
+
+.paly-animation-btn {
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  background: #fff;
+  font-size: 60px;
+  text-align: center;
+  line-height: 90px;
+  color: #5F41FF;
+  border-radius: 50%;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.paly-animation-btn {
+  font-size: 32px;
+  text-align: center;
+  line-height: ;
+  color: #5F41FF;
+}
+.paly-animation-btn::before {
+  content: '';
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 20px;
+  left: 18px;
+  background: #5F41FF;
+  border-radius: 50%;
+  animation: palybtn 1.6s ease-in-out infinite;
+}
+@keyframes palybtn{
+  0%{
+    transform: scale(0);
+    opacity: 1;
+  }
+  30% {
+    transform: scale(0);
+    opacity: 1;
+    background: 5F41FF;
+    border: 2px solid #5F41FF;
+  }
+
+  50%{
+      transform: scale(1.5);
+      opacity: .7;
+      background: #ffffff;
+  }
+  100%{
+      transform: scale(2);
+      opacity: 0;
+      border: 2px solid #5F41FF;
+  }
+}
+
+
 .philip-video-watch p {
   font-size: 16px;
 }
@@ -1940,6 +2016,10 @@ ul {
   color: #707070;
   font-size: 15px;
   display: inline-block;
+}
+.philip-social-list li a:hover {
+  color: #5F41FF;
+  transition: .3s;
 }
 .philip-social p {
   position: relative;
