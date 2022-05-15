@@ -682,6 +682,9 @@ input:focus::placeholder, textarea:focus::placeholder {
 .ml-10 {
   margin-left: 10px;
 }
+.ml-13 {
+  margin-left: 13px;
+}
 
 .ml-15 {
   margin-left: 15px;
@@ -1710,7 +1713,9 @@ ul {
 .custom-container.container-fluid {
   max-width: 1690px;
 }
-
+.has-menu-children span {
+  font-size: 12px;
+}
 .philip_header_border {
   border-bottom: 1px solid #dfe1e1;
 }
@@ -1805,35 +1810,9 @@ ul {
   visibility: visible;
 }
 
-.philip_main_menu li.has-menu-children:before {
-  position: absolute;
-  right: -18px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  content: "";
-  font-family: "Font Awesome 5 Pro";
-  font-weight: 500;
-  color: #1a1a1a;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
 
-.philip_main_menu li.has-menu-children:after {
-  position: absolute;
-  right: -18px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  content: "";
-  font-family: "Font Awesome 5 Pro";
-  font-weight: 500;
-  color: #5F41FF;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  opacity: 0;
-  visibility: hidden;
-}
+
+
 
 .philip_main_menu li.has-menu-children:hover:before {
   opacity: 0;
