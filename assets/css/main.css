@@ -145,7 +145,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #1a1a1a;
   margin-top: 0px;
   font-weight: 600;
@@ -1927,6 +1927,10 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 .philip-section-content {
   margin: 0;
+}
+
+.philip-section-heading {
+  margin-bottom: 22px;
 }
 
 .content-box span {
