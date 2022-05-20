@@ -57,12 +57,20 @@ body {
   margin-bottom: 8px;
 }
 
+.mb-16 {
+  margin-bottom: 16px;
+}
+
 .mb-27 {
   margin-bottom: 27px;
 }
 
 .mb-39 {
   margin-bottom: 39px;
+}
+
+.mb-44 {
+  margin-bottom: 44px;
 }
 
 .mr-38 {
@@ -2144,27 +2152,27 @@ input:focus::placeholder, textarea:focus::placeholder {
   list-style: none;
 }
 
-.dizme_tm_intro_fixed_price .anim:nth-child(1) {
+.philip-video-anmation .anim:nth-child(1) {
   -webkit-animation: myAnim 2s infinite;
   animation: myAnim 2s infinite;
 }
 
-.dizme_tm_intro_fixed_price .anim:nth-child(2) {
+.philip-video-anmation .anim:nth-child(2) {
   -webkit-animation: myAnim 2s infinite 0.3s;
   animation: myAnim 2s infinite 0.3s;
 }
 
-.dizme_tm_intro_fixed_price .anim:nth-child(3) {
+.philip-video-anmation .anim:nth-child(3) {
   -webkit-animation: myAnim 2s infinite 0.6s;
   animation: myAnim 2s infinite 0.6s;
 }
 
-.dizme_tm_intro_fixed_price {
+.philip-video-anmation {
   position: relative;
   width: 69px;
 }
 
-.dizme_tm_intro_fixed_price .anim {
+.philip-video-anmation .anim {
   text-decoration: none;
   background-color: #fff;
   font-family: montserrat;
@@ -2251,6 +2259,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 .philip-social p {
   font-size: 16px;
   color: black;
+  margin-bottom: 16px;
 }
 
 .philip-social-list li:not(:last-child) {
