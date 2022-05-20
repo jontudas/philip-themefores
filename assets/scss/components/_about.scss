@@ -33,11 +33,16 @@
     bottom: 91px;
     left: -14px;
   }
-  
+  .philip-section-content {
+    margin: 0;
+  }
   .content-box span {
     font-size: 60px;
     font-weight: bold;
   }
+  .philip-progress-ber .philip_progress_single:not(:last-child) {
+    padding-bottom: 30px;
+  } 
 .philip_progress_single .progress {
     position: relative;
   }

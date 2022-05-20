@@ -61,6 +61,10 @@ body {
   margin-bottom: 27px;
 }
 
+.mb-39 {
+  margin-bottom: 39px;
+}
+
 .mr-38 {
   margin-right: 38px;
 }
@@ -1913,9 +1917,17 @@ input:focus::placeholder, textarea:focus::placeholder {
   left: -14px;
 }
 
+.philip-section-content {
+  margin: 0;
+}
+
 .content-box span {
   font-size: 60px;
   font-weight: bold;
+}
+
+.philip-progress-ber .philip_progress_single:not(:last-child) {
+  padding-bottom: 30px;
 }
 
 .philip_progress_single .progress {
@@ -2035,6 +2047,22 @@ input:focus::placeholder, textarea:focus::placeholder {
 01. banner area
 ******************************************************* 
 *************************************************************** */
+.mb-27 {
+  margin-bottom: 27px;
+}
+
+.mr-38 {
+  margin-right: 38px;
+}
+
+.mt-44 {
+  margin-top: 44px;
+}
+
+.pt-56 {
+  padding-top: 56px;
+}
+
 .philip-banner-content p {
   font-size: 22px;
   color: #737373;
