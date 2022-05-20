@@ -94,6 +94,9 @@ CSS INDEX
 .fix {
 	overflow: hidden
 }
+a {
+    text-decoration: none
+}
 a,
 .button {
 	@include transition(.3s);

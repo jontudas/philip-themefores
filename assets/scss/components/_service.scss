@@ -11,20 +11,20 @@
 
 
 
-.philip-service-box {
+.philip-service {
     padding: 72px 72px 67px 72px;
     text-align: center;
   }
-  .philip-service-box span {
+  .philip-service span {
     font-size: 60px;
     color: #161616;
     font-weight: 400;
   }
-  .philip-service-box:hover .philip-service-item span, h3 {
+  .philip-service:hover .philip-service-item span, h3 {
     color: #5F41FF;
     transition: .3s;
   }
-  .philip-service-box:hover .philip-service-item h3 {
+  .philip-service:hover .philip-service-item h3 {
     color: #5F41FF;
     transition: .3s;
   }
@@ -48,7 +48,7 @@
   .box-border:nth-last-child(-n+2) {
     border-top: 0px;
   }
-  .philip-service-box h3 {
+  .philip-service h3 {
     font-size: 24px;
     color: #161616;
     font-weight: 400;

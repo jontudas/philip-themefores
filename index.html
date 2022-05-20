@@ -24,21 +24,21 @@
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
     
-    <body>
+    <body class=" nav-expanded">
         <!-- header-section-start  -->
         <header>
             <div class="philip-header-area">
                 <div class="philip-header-main-area">
                     <div class="container-fluid custom-container">
                         <div class="row align-items-center">
-                            <div class="col-xxl-2">
+                            <div class="col-xxl-2 col-6">
                                 <div class="philip-logo-section">
                                     <a href="index.html">
                                         <img src="assets/img/logo/logo.png" alt="logo">
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xxl-8">
+                            <div class="col-xxl-8 d-none d-lg-block">
                                 <div class="philip_main_menu philip_border_right-2 philip_logo_bg_before text-center">
                                     <nav id="" class="philip_menu">
                                         <ul>
@@ -93,7 +93,7 @@
                                     </nav>
                                 </div>
                             </div>
-                            <div class="col-xxl-2">
+                            <div class="col-xxl-2 d-none d-lg-block">
                                 <div class="philip_header_quick_info text-end">
                                     <div class="philip_quick_contact">
                                         <span>
@@ -105,6 +105,11 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-6 text-end d-lg-none">
+                                <div class="menu_bars">
+                                    <button class="side-toggle nav-expander bar" id="nav-expander"><i class="fa-solid fa-bars-staggered"></i></button>
+                                </div>
+                            </div>
                             
                         </div>
                     </div>
@@ -113,7 +118,6 @@
         </header>
      
         <!-- header-section-end -->
-
         <!-- main-section-start  -->
             <!-- banner-section-start  -->
                 <div class="philip-banner-area pt-56 ">
@@ -171,7 +175,7 @@
                 </div>
             <!-- banner-section-end  -->
             <!-- about section start -->
-                    <div class="philip-about-area  pt-120 philip-bg-gray">
+                    <div class="philip-about-area  pt-120 pb-120 philip-bg-gray">
                         <div class="container">
                             <div class="row">
                                 <div class="col-xxl-6">
@@ -229,7 +233,7 @@
                     </div>     
             <!-- about section end -->
             <!-- service-section-start  -->
-                    <div class="philip-service-area pt-120">
+                    <div class="philip-service-area pt-120 pb-120">
                         <div class="container">
                             <div class="philip-section-wrap-title text-center">
                                 <p class="philip-section-title">Creative Services</p>
@@ -241,10 +245,10 @@
                                     industry-wide, advanced, and quality services.
                                 </p>
                             </div>
-                            <div class="philip-service-box-area mt-65">
+                            <div class="philip-service-area mt-65">
                                 <div class="row g-0">
                                     <div class="col-xxl-4 box-border">
-                                        <div class="philip-service-box ">
+                                        <div class="philip-service">
                                             <div class="philip-service-item">
                                                 <span><i class="fa-solid fa-desktop"></i></span>
                                                 <h3>Web Developer</h3>
@@ -256,7 +260,7 @@
                                         </div>
                                     </div>
                                     <div class="col-xxl-4 box-border">
-                                        <div class="philip-service-box">
+                                        <div class="philip-service">
                                             <div class="philip-service-item">
                                                 <span><i class="fa-solid fa-laptop-code"></i></span>
                                                 <h3>Web Developer</h3>
@@ -268,7 +272,7 @@
                                         </div>
                                     </div>
                                     <div class="col-xxl-4 box-border">
-                                        <div class="philip-service-box">
+                                        <div class="philip-service">
                                             <div class="philip-service-item">
                                                 <span><i class="fa-brands fa-deezer"></i></span>
                                                 <h3>Web Developer</h3>
@@ -280,7 +284,7 @@
                                         </div>
                                     </div>
                                     <div class="col-xxl-4 box-border">
-                                        <div class="philip-service-box">
+                                        <div class="philip-service">
                                             <div class="philip-service-item">
                                                 <span><i class="fa-solid fa-mobile-screen-button"></i></span>
                                                 <h3>Web Developer</h3>
@@ -292,7 +296,7 @@
                                         </div>
                                     </div>
                                     <div class="col-xxl-4 box-border">
-                                        <div class="philip-service-box">
+                                        <div class="philip-service">
                                             <div class="philip-service-item">
                                                 <span><i class="fa-solid fa-bullhorn"></i></span>
                                                 <h3>Web Developer</h3>
@@ -304,7 +308,7 @@
                                         </div>
                                     </div>
                                     <div class="col-xxl-4 box-border">
-                                        <div class="philip-service-box">
+                                        <div class="philip-service">
                                             <div class="philip-service-item">
                                                 <span><i class="fa-brands fa-accusoft"></i></span>
                                                 <h3>Web Developer</h3>
@@ -323,7 +327,7 @@
             <!-- service-section-end  -->
 
             <!-- portfolio-section-start  -->
-                    <section class="philip-portfolio-area philip-padding-120 philip-bg-gray">
+                    <section class="philip-portfolio-area pt-120 pb-120 philip-bg-gray">
                         <div class="container">
                             <div class="philip-section-wrap-title text-center">
                                 <p class="philip-section-title">Portfolio</p>

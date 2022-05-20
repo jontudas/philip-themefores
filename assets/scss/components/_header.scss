@@ -53,6 +53,20 @@
   width: 100%;
   border-bottom: 0px;
 }
+#nav-expander {
+	color: #5F41FF;
+	font-size: 22px;
+	background: transparent;
+	border: 0;
+}
+
+@media (max-width: 992px) {
+  .philip-header-main-area {
+    background: transparent;
+    height: 100px;
+    line-height: 95px;
+  }
+ }
 
 .custom-container.container-fluid {
   max-width: 1690px;

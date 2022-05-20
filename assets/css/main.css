@@ -103,6 +103,10 @@ body {
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 a,
 .button {
   -webkit-transition: all 0.3s linear 0s;
@@ -1721,6 +1725,20 @@ input:focus::placeholder, textarea:focus::placeholder {
   border-bottom: 0px;
 }
 
+#nav-expander {
+  color: #5F41FF;
+  font-size: 22px;
+  background: transparent;
+  border: 0;
+}
+
+@media (max-width: 992px) {
+  .philip-header-main-area {
+    background: transparent;
+    height: 100px;
+    line-height: 95px;
+  }
+}
 .custom-container.container-fluid {
   max-width: 1690px;
 }
@@ -1988,24 +2006,24 @@ input:focus::placeholder, textarea:focus::placeholder {
 02. service area
 ******************************************************* 
 *************************************************************** */
-.philip-service-box {
+.philip-service {
   padding: 72px 72px 67px 72px;
   text-align: center;
 }
 
-.philip-service-box span {
+.philip-service span {
   font-size: 60px;
   color: #161616;
   font-weight: 400;
 }
 
-.philip-service-box:hover .philip-service-item span, h3 {
+.philip-service:hover .philip-service-item span, h3 {
   color: #5F41FF;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.philip-service-box:hover .philip-service-item h3 {
+.philip-service:hover .philip-service-item h3 {
   color: #5F41FF;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -2037,7 +2055,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   border-top: 0px;
 }
 
-.philip-service-box h3 {
+.philip-service h3 {
   font-size: 24px;
   color: #161616;
   font-weight: 400;
