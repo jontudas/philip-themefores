@@ -1953,8 +1953,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 .progress_label h5 {
   font-size: 18px;
   font-weight: 400;
-  color: #4A4847;
-  margin-bottom: 15px;
+  color: #707070;
 }
 
 .progress {
