@@ -81,23 +81,23 @@
     list-style: none;
   }
 
-  .dizme_tm_intro_fixed_price .anim:nth-child(1) {
+  .philip-video-anmation .anim:nth-child(1) {
     -webkit-animation: myAnim 2s infinite;
     animation: myAnim 2s infinite;
 }
-.dizme_tm_intro_fixed_price .anim:nth-child(2) {
+.philip-video-anmation .anim:nth-child(2) {
   -webkit-animation: myAnim 2s infinite .3s;
   animation: myAnim 2s infinite .3s;
 }
-.dizme_tm_intro_fixed_price .anim:nth-child(3) {
+.philip-video-anmation .anim:nth-child(3) {
   -webkit-animation: myAnim 2s infinite .6s;
   animation: myAnim 2s infinite .6s;
 }
-.dizme_tm_intro_fixed_price {
+.philip-video-anmation {
   position: relative;
   width: 69px;
 }
-.dizme_tm_intro_fixed_price .anim {
+.philip-video-anmation .anim {
 	text-decoration: none;
 	background-color: #fff;
 	font-family: montserrat;
