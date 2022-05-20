@@ -50,13 +50,28 @@ CSS INDEX
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
  body {
-    font-family: $opensans;
+    font-family: $dmSans;
     font-weight: 400;
     font-style: normal;
     color: #878c8f;
     font-size: 16px;
 }
-
+.mb-8 {
+    margin-bottom: 8px;
+  }
+.mb-27 {
+    margin-bottom: 27px;
+  }
+  .mr-38 {
+    margin-right: 38px;
+  }
+  .mt-44 {
+    margin-top: 44px;
+  }
+  .pt-56 {
+    padding-top: 56px;
+  }
+  
 .img,img {
 	max-width: 100%;
 	@include transition(.3s);
@@ -103,7 +118,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: $poppins;
+	font-family: $dmSans;
 	color: #1a1a1a;
 	margin-top: 0px;
 	font-weight: 600;
