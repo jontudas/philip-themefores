@@ -81,10 +81,13 @@
   .hoverinner {
 	position: absolute;
 	top: 0;
-	height: 0;
-	width: 0;
+	height: 100%;
+	left: 0;
+	width: 100%;
+	transition: .4s;
 	background: #00000075;
 	color: #fff;
+	transition: all .3s;
 	opacity: 0;
 	visibility: hidden;
   }
@@ -93,6 +96,9 @@
 	display: block;
 	height: 1px;
 	width: 150px;
+	transform: scale(0);
+	transform-origin: top left;
+	transition: all .3s;
 	background: #acacac;
 	top: 70px;
 	position: absolute;
@@ -106,8 +112,11 @@
     width: 1px;
     background: #acacac;
     top: 50px;
+	transition: all .3s;
     position: absolute;
     bottom: 0;
+	transform: scale(0);
+	transform-origin: top left;
     left: 76px;
 }
 .hoverinner2::before {
@@ -117,15 +126,21 @@
 	width: 150px;
 	background: #acacac;
 	position: absolute;
+	transition: all .3s;
 	bottom: 70px;
+	transform: scale(0);
+	transform-origin: bottom right;
 	right: 50px;
   }
   .hoverinner2::after {
     content: "";
-    display: block;
+	transition: all .3s;
+	display: block;
     height: 150px;
     width: 1px;
     background: #acacac;
+	transform: scale(0);
+	transform-origin: bottom right;
 	position: absolute;
     bottom: 50px;
     right: 76px;
@@ -136,11 +151,13 @@
   .hoverinner-content li {
 	  list-style: none;
   }
+  .philip-portfolio-item:hover .hoverinner1, .philip-portfolio-item:hover .hoverinner2 {
+	&::before, &::after {
+		transform: scale(1);
+	}
+  }
   .philip-portfolio-item:hover .hoverinner {
-	  height: 100%;
-	  width: 100%;
 	  opacity: 1;
 	  visibility: visible;
-	  transition: .4s;
   }
 

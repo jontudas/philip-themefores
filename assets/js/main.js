@@ -357,6 +357,14 @@ testimonialActive();
 recentProjectActive();
 sliderTestimonialActive();
 brandActive();
-
+$('.portfolio-grid-wrapper').isotope({
+	// set itemSelector so .grid-sizer is not used in layout
+	itemSelector: '.portfolio-grid-item',
+	percentPosition: true,
+	masonry: {
+		// use element for option
+		columnWidth: '.portfolio-grid-item'
+	}
+})
 
 })(jQuery);
