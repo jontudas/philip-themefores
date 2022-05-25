@@ -69,12 +69,28 @@ body {
   margin-bottom: 39px;
 }
 
+.mb-67 {
+  margin-bottom: 67px;
+}
+
+.mb-43 {
+  margin-bottom: 43px;
+}
+
 .mb-44 {
   margin-bottom: 44px;
 }
 
 .mr-38 {
   margin-right: 38px;
+}
+
+.mt-29 {
+  margin-top: 29px;
+}
+
+.mt-43 {
+  margin-top: 43px;
 }
 
 .mt-44 {
@@ -2017,13 +2033,13 @@ input:focus::placeholder, textarea:focus::placeholder {
   font-weight: 400;
 }
 
-.philip-service:hover .philip-service-item span, h3 {
+.philip-service-item span {
   color: #5F41FF;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.philip-service:hover .philip-service-item h3 {
+.philip-service:hover .philip-service-content h3 {
   color: #5F41FF;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -2059,7 +2075,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   font-size: 24px;
   color: #161616;
   font-weight: 400;
-  margin-top: 41px;
+  margin-top: 43px;
 }
 
 .philip-service-content p {
@@ -2067,7 +2083,6 @@ input:focus::placeholder, textarea:focus::placeholder {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 0;
-  margin-top: 29px;
 }
 
 /*
@@ -2140,6 +2155,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border: 1px solid #5F41FF;
 }
 
 .philip-button a:hover {
@@ -2346,6 +2362,159 @@ input:focus::placeholder, textarea:focus::placeholder {
 .content-box span {
   font-size: 60px;
   font-weight: bold;
+}
+
+/*
+************
+*************************
+02. portfolio area
+******************************************************* 
+*************************************************************** */
+.philip-portfolio-item.image {
+  width: 100%;
+}
+
+.portfolio_designer_id_77 .portfolio_single_wrapp .portfolio_single_wrap_box {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-top-color: #cccccc;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-bottom-color: #cccccc;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-right-color: #cccccc;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-left-color: #cccccc;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-radius: 0%;
+  -webkit-box-shadow: 0px 0px 0px 0px #cccccc;
+          box-shadow: 0px 0px 0px 0px #cccccc;
+  display: inline-block;
+  width: 100%;
+}
+
+.essential_effect .mask-wrapper::before, .essential_effect .mask-wrapper::after, .essential_effect .mask-wrapper .mask::before, .essential_effect .mask-wrapper .mask::after {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 0px;
+  width: 0px;
+  background-color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.essential_effect .mask-wrapper::after {
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  bottom: 20px;
+  right: 20px;
+}
+
+.essential_effect .mask-wrapper::before {
+  border-left: 1px solid #fff;
+  border-top: 1px solid #fff;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+}
+
+.portfolio_single_wrapp.left_side .mask-wrapper, .portfolio_single_wrapp.left_side .mask-contents {
+  float: right;
+  width: 50%;
+}
+
+.lange-image {
+  height: 860px;
+  width: 100%;
+}
+
+.philip-portfolio-item.image {
+  position: relative;
+}
+
+.hoverinner {
+  position: absolute;
+  top: 0;
+  height: 0;
+  width: 0;
+  background: #00000075;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.hoverinner1::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 150px;
+  background: #acacac;
+  top: 70px;
+  position: absolute;
+  bottom: 0px;
+  left: 50px;
+}
+
+.hoverinner1::after {
+  content: "";
+  display: block;
+  height: 150px;
+  width: 1px;
+  background: #acacac;
+  top: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 76px;
+}
+
+.hoverinner2::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 150px;
+  background: #acacac;
+  position: absolute;
+  bottom: 70px;
+  right: 50px;
+}
+
+.hoverinner2::after {
+  content: "";
+  display: block;
+  height: 150px;
+  width: 1px;
+  background: #acacac;
+  position: absolute;
+  bottom: 50px;
+  right: 76px;
+}
+
+.hoverinner-content h4 {
+  color: #fff;
+}
+
+.hoverinner-content li {
+  list-style: none;
+}
+
+.philip-portfolio-item:hover .hoverinner {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 /*

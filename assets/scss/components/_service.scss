@@ -20,11 +20,11 @@
     color: #161616;
     font-weight: 400;
   }
-  .philip-service:hover .philip-service-item span, h3 {
+ .philip-service-item span {
     color: #5F41FF;
     transition: .3s;
   }
-  .philip-service:hover .philip-service-item h3 {
+  .philip-service:hover .philip-service-content h3 {
     color: #5F41FF;
     transition: .3s;
   }
@@ -52,14 +52,12 @@
     font-size: 24px;
     color: #161616;
     font-weight: 400;
-    margin-top: 41px;
+    margin-top: 43px;
   }
-  
   .philip-service-content p {
     color: #737373;
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 0;
-    margin-top: 29px;
   }
   
