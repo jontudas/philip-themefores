@@ -85,6 +85,10 @@ body {
   margin-right: 38px;
 }
 
+.mt-24 {
+  margin-top: 24px;
+}
+
 .mt-29 {
   margin-top: 29px;
 }
@@ -99,6 +103,10 @@ body {
 
 .mt-44 {
   margin-top: 44px;
+}
+
+.mt-54 {
+  margin-top: 54px;
 }
 
 .pt-56 {
@@ -2612,6 +2620,71 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 .qualification-button span path {
   fill: #5F41FF;
+}
+
+.philip-available {
+  background-image: url("../img/avaliable/image.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  padding-top: 105px;
+  padding-bottom: 87px;
+  padding-left: 70px;
+  padding-right: 196px;
+  border-radius: 11px;
+}
+
+.philip-available-content h6 {
+  font-size: 16px;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600px;
+  color: #fff;
+}
+
+.philip-available-content h3 {
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  margin-top: 9px;
+  margin-bottom: 0;
+}
+
+.philip-available-content p {
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: #DFDFDF;
+}
+
+.philip-available-content .philip-button2 a {
+  background-color: transparent;
+  color: #fff;
+  height: 60px;
+  width: 150px;
+  border: 1px solid #ffffff;
+  font-family: "Nunito Sans", sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.philip-available-content .philip-button2 a:hover {
+  background-color: #5F41FF;
+  color: #fff;
+  border: 1px solid #5F41FF;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 /*
