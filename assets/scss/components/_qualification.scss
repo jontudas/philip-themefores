@@ -1,0 +1,46 @@
+@use '../abstracts/variables' as *;
+
+/*
+************
+*************************
+02. qualification area
+******************************************************* 
+*************************************************************** */
+
+.philip-qualification-box {
+	padding: 31px 31px 58px 31px;
+	box-shadow: 5px 9px 18px -2px #d2d2d23b;
+}
+.philip-qualification-box-title h3 {
+    font-size: 24px;
+    font-family: $roboto;
+    font-weight: 400;
+    color: black;
+    margin: 0;
+}
+.philip-qualification-box-title h6 {
+    font-size: 12px;
+    font-family: $dmSans;
+    font-weight: 400;
+    color: #737373;
+    margin-top: 9px;
+    margin-bottom: 0;
+}
+.philip-qualification-box-content p {
+    font-size: 16px;
+    font-family: $dmSans;;
+    font-weight: 400;
+    color: #737373;
+    margin-top: 27px;
+    margin-bottom: 0;
+}
+
+.qua-button {
+	background: #F6F6F6;
+	padding: 44px;
+	display: inline-block;
+	border-radius: 50%;
+}
+.qualification-button span path {
+    fill: #5F41FF;
+  }

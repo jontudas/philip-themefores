@@ -48,6 +48,10 @@
   .box-border:nth-last-child(-n+2) {
     border-top: 0px;
   }
+  .philip-service-item span path {
+    fill: #5F41FF;
+    transition: 0.3s;
+  }
   .philip-service h3 {
     font-size: 24px;
     color: #161616;
@@ -60,4 +64,10 @@
     font-weight: 400;
     margin-bottom: 0;
   }
+.hoverinner-content li:nth-child(1) {
+  margin-right: 20px;
+}
+.hoverinner-content li span {
+  font-size: 30px;
+}
   

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 ************
 *************************
@@ -88,6 +89,10 @@ body {
   margin-top: 29px;
 }
 
+.mt-32 {
+  margin-top: 32px;
+}
+
 .mt-43 {
   margin-top: 43px;
 }
@@ -103,9 +108,6 @@ body {
 .img, img {
   max-width: 100%;
   -webkit-transition: all 0.3s linear 0s;
-  -moz-transition: all 0.3s linear 0s;
-  -ms-transition: all 0.3s linear 0s;
-  -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
 
@@ -128,9 +130,6 @@ a {
 a,
 .button {
   -webkit-transition: all 0.3s linear 0s;
-  -moz-transition: all 0.3s linear 0s;
-  -ms-transition: all 0.3s linear 0s;
-  -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
 
@@ -262,24 +261,21 @@ input::-webkit-input-placeholder {
   color: #878c8f;
   font-size: 16px;
   opacity: 1;
-  transition: 0.5s;
-}
-input:-moz-placeholder {
-  color: #878c8f;
-  font-size: 16px;
-  opacity: 1;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 input::-moz-placeholder {
   color: #878c8f;
   font-size: 16px;
   opacity: 1;
+  -moz-transition: 0.5s;
   transition: 0.5s;
 }
 input:-ms-input-placeholder {
   color: #878c8f;
   font-size: 16px;
   opacity: 1;
+  -ms-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -287,25 +283,38 @@ textarea::-webkit-input-placeholder {
   color: #878c8f;
   font-size: 16px;
   opacity: 1;
-  transition: 0.5s;
-}
-textarea:-moz-placeholder {
-  color: #878c8f;
-  font-size: 16px;
-  opacity: 1;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 textarea::-moz-placeholder {
   color: #878c8f;
   font-size: 16px;
   opacity: 1;
+  -moz-transition: 0.5s;
   transition: 0.5s;
 }
 textarea:-ms-input-placeholder {
   color: #878c8f;
   font-size: 16px;
   opacity: 1;
+  -ms-transition: 0.5s;
   transition: 0.5s;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+input:focus::-ms-input-placeholder, textarea:focus::-ms-input-placeholder {
+  opacity: 0;
 }
 
 input:focus::placeholder, textarea:focus::placeholder {
@@ -1695,9 +1704,12 @@ input:focus::placeholder, textarea:focus::placeholder {
   z-index: 9;
   left: 0;
   right: 0;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  animation: 800ms ease-in-out 0s normal none 1 running fadeInDown;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  -webkit-animation: 800ms ease-in-out 0s normal none 1 running fadeInDown;
+          animation: 800ms ease-in-out 0s normal none 1 running fadeInDown;
   width: 100%;
   border-bottom: 0px;
 }
@@ -1826,7 +1838,8 @@ input:focus::placeholder, textarea:focus::placeholder {
   left: 224px;
   top: 0;
   width: 250px;
-  box-shadow: 0px 13px 29px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0px 13px 29px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 13px 29px rgba(0, 0, 0, 0.05);
   padding: 26px 30px;
   border-top: 5px solid #5F41FF;
   opacity: 0;
@@ -1879,8 +1892,9 @@ input:focus::placeholder, textarea:focus::placeholder {
   position: absolute;
   right: -18px;
   top: 50%;
-  transform: translateY(-50%);
-  content: "\f107";
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  content: "";
   font-family: "Font Awesome 5 Pro";
   font-weight: 500;
   color: #1a1a1a;
@@ -1909,6 +1923,8 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 
 .philip_quick_contact {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
@@ -2023,11 +2039,13 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 .philip-service-item span {
   color: #5F41FF;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .philip-service:hover .philip-service-content h3 {
   color: #5F41FF;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -2057,6 +2075,12 @@ input:focus::placeholder, textarea:focus::placeholder {
   border-top: 0px;
 }
 
+.philip-service-item span path {
+  fill: #5F41FF;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .philip-service h3 {
   font-size: 24px;
   color: #161616;
@@ -2069,6 +2093,14 @@ input:focus::placeholder, textarea:focus::placeholder {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 0;
+}
+
+.hoverinner-content li:nth-child(1) {
+  margin-right: 20px;
+}
+
+.hoverinner-content li span {
+  font-size: 30px;
 }
 
 /*
@@ -2132,9 +2164,15 @@ input:focus::placeholder, textarea:focus::placeholder {
   text-decoration: none;
   display: inline-block;
   border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 1px solid #5F41FF;
 }
 
@@ -2142,6 +2180,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   background-color: #fff;
   color: #5F41FF;
   border: 1px solid #5F41Ff;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -2151,9 +2190,15 @@ input:focus::placeholder, textarea:focus::placeholder {
   height: 80px;
   width: 80px;
   display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 50%;
   color: #5F41FF;
 }
@@ -2204,24 +2249,55 @@ input:focus::placeholder, textarea:focus::placeholder {
   border: 4px solid #5F41FF42;
 }
 
-@keyframes myAnim {
+@-webkit-keyframes myAnim {
   0% {
-    transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
     opacity: 1;
   }
   30% {
-    transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
     opacity: 1;
     background: 5F41FF;
     border: 2px solid #5F41FF;
   }
   50% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
     opacity: 0.7;
     background: #ffffff;
   }
   100% {
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+    border: 2px solid #5F41FF;
+  }
+}
+
+@keyframes myAnim {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  30% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+    background: 5F41FF;
+    border: 2px solid #5F41FF;
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.7;
+    background: #ffffff;
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
     opacity: 0;
     border: 2px solid #5F41FF;
   }
@@ -2253,6 +2329,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 .philip-social-list li a:hover {
   color: #5F41FF;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -2293,7 +2370,8 @@ input:focus::placeholder, textarea:focus::placeholder {
   color: #5F41FF;
   padding: 20px;
   border-radius: 16px;
-  box-shadow: -12px 12px 0px -2px;
+  -webkit-box-shadow: -12px 12px 0px -2px;
+          box-shadow: -12px 12px 0px -2px;
   position: absolute;
   bottom: 91px;
   left: -14px;
@@ -2336,7 +2414,8 @@ input:focus::placeholder, textarea:focus::placeholder {
   border-left-style: solid;
   border-left-width: 1px;
   border-radius: 0%;
-  box-shadow: 0px 0px 0px 0px #cccccc;
+  -webkit-box-shadow: 0px 0px 0px 0px #cccccc;
+          box-shadow: 0px 0px 0px 0px #cccccc;
   display: inline-block;
   width: 100%;
 }
@@ -2348,6 +2427,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   height: 0px;
   width: 0px;
   background-color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   opacity: 0;
 }
@@ -2387,9 +2467,11 @@ input:focus::placeholder, textarea:focus::placeholder {
   height: 100%;
   left: 0;
   width: 100%;
+  -webkit-transition: 0.4s;
   transition: 0.4s;
   background: #00000075;
   color: #fff;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 0;
   visibility: hidden;
@@ -2400,8 +2482,11 @@ input:focus::placeholder, textarea:focus::placeholder {
   display: block;
   height: 1px;
   width: 150px;
-  transform: scale(0);
-  transform-origin: top left;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background: #acacac;
   top: 70px;
@@ -2417,11 +2502,14 @@ input:focus::placeholder, textarea:focus::placeholder {
   width: 1px;
   background: #acacac;
   top: 50px;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   position: absolute;
   bottom: 0;
-  transform: scale(0);
-  transform-origin: top left;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
   left: 76px;
 }
 
@@ -2432,22 +2520,28 @@ input:focus::placeholder, textarea:focus::placeholder {
   width: 150px;
   background: #acacac;
   position: absolute;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   bottom: 70px;
-  transform: scale(0);
-  transform-origin: bottom right;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
   right: 50px;
 }
 
 .hoverinner2::after {
   content: "";
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   display: block;
   height: 150px;
   width: 1px;
   background: #acacac;
-  transform: scale(0);
-  transform-origin: bottom right;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
   position: absolute;
   bottom: 50px;
   right: 76px;
@@ -2462,12 +2556,62 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 
 .philip-portfolio-item:hover .hoverinner1::before, .philip-portfolio-item:hover .hoverinner1::after, .philip-portfolio-item:hover .hoverinner2::before, .philip-portfolio-item:hover .hoverinner2::after {
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .philip-portfolio-item:hover .hoverinner {
   opacity: 1;
   visibility: visible;
+}
+
+/*
+************
+*************************
+02. qualification area
+******************************************************* 
+*************************************************************** */
+.philip-qualification-box {
+  padding: 31px 31px 58px 31px;
+  -webkit-box-shadow: 5px 9px 18px -2px #d2d2d23b;
+          box-shadow: 5px 9px 18px -2px #d2d2d23b;
+}
+
+.philip-qualification-box-title h3 {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: black;
+  margin: 0;
+}
+
+.philip-qualification-box-title h6 {
+  font-size: 12px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  color: #737373;
+  margin-top: 9px;
+  margin-bottom: 0;
+}
+
+.philip-qualification-box-content p {
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  color: #737373;
+  margin-top: 27px;
+  margin-bottom: 0;
+}
+
+.qua-button {
+  background: #F6F6F6;
+  padding: 44px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.qualification-button span path {
+  fill: #5F41FF;
 }
 
 /*
@@ -2547,21 +2691,20 @@ input:focus::placeholder, textarea:focus::placeholder {
   cursor: pointer;
   display: block;
   border-radius: 50px;
-  box-shadow: inset 0 0 0 2px #1a1a1a;
+  -webkit-box-shadow: inset 0 0 0 2px #1a1a1a;
+          box-shadow: inset 0 0 0 2px #1a1a1a;
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(15px);
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
   -webkit-transition: all 0.3s linear 0s;
-  -moz-transition: all 0.3s linear 0s;
-  -ms-transition: all 0.3s linear 0s;
-  -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
   background-color: #fff;
 }
 .progress-wrap::after {
   position: absolute;
-  content: "\f176";
+  content: "";
   font-family: "Font Awesome 5 Pro";
   text-align: center;
   line-height: 46px;
@@ -2583,15 +2726,14 @@ input:focus::placeholder, textarea:focus::placeholder {
 .progress-wrap svg.progress-circle path {
   stroke: #F94D1C;
   stroke-width: 4;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-transition: all 0.3s linear 0s;
-  -moz-transition: all 0.3s linear 0s;
-  -ms-transition: all 0.3s linear 0s;
-  -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
 .progress-wrap:is(.progress-wrap-dark) {
-  box-shadow: inset 0 0 0 2px #f6f8fa;
+  -webkit-box-shadow: inset 0 0 0 2px #f6f8fa;
+          box-shadow: inset 0 0 0 2px #f6f8fa;
   background-color: transparent;
 }
 .progress-wrap:is(.progress-wrap-dark)::after {
@@ -2605,7 +2747,8 @@ input:focus::placeholder, textarea:focus::placeholder {
   opacity: 1;
   right: 50px;
   visibility: visible;
-  transform: translateY(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 @media (max-width: 767px) {
   .progress-wrap.active-progress {
@@ -2624,5 +2767,3 @@ input:focus::placeholder, textarea:focus::placeholder {
 23. Footer
 ******************************************************* 
 *************************************************************** */
-
-/*# sourceMappingURL=main.css.map */
