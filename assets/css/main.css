@@ -85,8 +85,16 @@ body {
   margin-right: 38px;
 }
 
+.mt-8 {
+  margin-top: 8px;
+}
+
 .mt-24 {
   margin-top: 24px;
+}
+
+.mt-28 {
+  margin-top: 28px;
 }
 
 .mt-29 {
@@ -103,6 +111,10 @@ body {
 
 .mt-44 {
   margin-top: 44px;
+}
+
+.mt-47 {
+  margin-top: 47px;
 }
 
 .mt-54 {
@@ -2685,6 +2697,98 @@ input:focus::placeholder, textarea:focus::placeholder {
   border: 1px solid #5F41FF;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+/*
+************
+*************************
+23. blog
+******************************************************* 
+*************************************************************** */
+.philip-blog-card {
+  border-radius: 9px;
+  -webkit-box-shadow: 6px 2px 9px 7px #e3e3e30a;
+          box-shadow: 6px 2px 9px 7px #e3e3e30a;
+  background-color: #fff;
+}
+
+.philip-blog-content p {
+  color: #737373;
+  font-size: 14px;
+  margin: 0;
+}
+
+.philip-blog-content {
+  padding: 28px 30px 30px 30px;
+}
+
+.philip-blog-content h3 {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0;
+}
+
+.user p {
+  color: #5F41FF;
+  font-size: 14px;
+  margin: 0;
+}
+
+.user-details a {
+  color: #5F41FF;
+  font-size: 14px;
+}
+
+/*
+************
+*************************
+23. testimonial
+******************************************************* 
+*************************************************************** */
+.philip-testimonial-content p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+
+.philip-testimonial-user h3 {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.philip-testimonial-user p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #5F41FF;
+}
+
+.carousel-control-prev {
+  display: none;
+}
+
+.carousel-control-next-icon {
+  display: none;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: #5F41FF;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 6px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.carousel-indicators .active {
+  width: 40px;
+  height: 5px;
+  border-radius: 0%;
 }
 
 /*
