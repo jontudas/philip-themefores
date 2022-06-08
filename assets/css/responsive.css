@@ -1,0 +1,125 @@
+@media(max-width: 1400px) {
+    .philp-heading {
+        font-size: 64px;
+    }
+  }
+@media(max-width: 1200px) {
+    .philip-header-area {
+        padding: 48px 36px;
+      }
+      .philip-section-heading {
+        font-size: 40px;
+    }
+    .philip-button.mt-60 {
+        margin-top: 40px;
+    }
+    .progress_label h5 {
+        font-size: 16px;
+        font-weight: 400;
+        color: #707070;
+      }
+      .lange-image {
+        height: 100%;
+        width: 100%;
+      }
+      .philip-blog-title a {
+        font-size: 21px;
+      }
+      .philip-blog-card {
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 40px;
+      }
+      .philip-available {
+        padding-bottom: 80px;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      .philip-available-content h3 {
+        font-size: 34px;
+      }
+  }
+  @media(max-width: 992px) {
+    .philip-header-area {
+        padding: 14px 36px;
+      }
+      .col-xxl-7.col-xl-7.col-lg-7.d-flex.align-items-center {
+        justify-content: center;
+      }
+      .philip-banner-image {
+          text-align: center;
+          margin-top: 38px;
+      }
+      .philip-banner-image img {
+          width: 60%;
+      }
+      .content-box {
+        left: 52px;
+    }
+    .philip-about-content {
+        margin-top: 50px;
+      }
+      .philip-available {
+        padding-bottom: 80px;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      .philip-available-content h3 {
+        font-size: 34px;
+      }
+      .philip-blog-title a {
+        font-size: 17px;
+      }
+      .philip-blog-content p {
+        color: #737373;
+        font-size: 12px;
+        margin: 0;
+      }
+      .philip-counter-box.d-flex.justify-content-center.align-content-center {
+        margin-bottom: 50px;
+      }
+      .philip-contact-box.philip-bg-gray {
+        margin-top: 50px;
+      }
+      .footer-wrap {
+        text-align: right;
+      }
+      .footer-subscription .philip-button {
+        margin-bottom: 60px;
+      }
+      .philip-footer-bottom {
+        text-align: center;
+      }
+      .footer-terms {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+  }
+  @media(max-width: 768px) {
+    .philp-heading {
+        font-size: 58px;
+      } 
+      .content-box span {
+        display: block;
+      }
+      .philip-about-image {
+        margin-right: 0px;
+      }
+      .footer-wrap {
+        text-align: left;
+      }
+      .footer-subscription .philip-button {
+        margin-bottom: 0px;
+      }
+      .philip-footer-title {
+        margin-top: 60px;
+      }
+   
+  
+  }
+  @media(max-width: 576px) {
+    .philip-section-heading {
+      font-size: 31px;
+    }
+  }

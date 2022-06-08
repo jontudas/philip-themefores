@@ -1,0 +1,72 @@
+@use '../abstracts/variables' as *;
+
+/*
+************
+*************************
+23. blog
+******************************************************* 
+*************************************************************** */
+
+
+.philip-blog-card {
+	border-radius: 9px;
+	-webkit-box-shadow: 6px 2px 9px 7px rgba(227, 227, 227, 0.0392156863);
+	box-shadow: 6px 2px 9px 7px rgba(227, 227, 227, 0.0392156863);
+	background-color: #fff;
+	overflow: hidden;
+	border: 1px solid white;
+}
+.philip-blog-content p {
+    color: $textColor;
+    font-size: 14px;
+    margin: 0;
+}
+.philip-blog-image {
+	overflow: hidden;
+}  
+.philip-blog-image:hover img {
+	transform: scale(1.2);
+	transition: all 2s;
+}
+                  
+.philip-blog-content {
+	padding: 28px 30px 30px 30px;
+}
+.philip-blog-title {
+    a {
+        font-size: 24px;
+        color: #161616;
+        font-family: $roboto;
+        margin-bottom: 0;
+    }
+    a:hover {
+        color: $primaryColor;
+        transition: .3s;
+    }
+}
+.user {
+    a {
+        color: #737373;
+        font-size: 14px;
+        margin: 0;
+        text-transform: capitalize;
+    }
+    a:hover {
+        color: $primaryColor;
+        transition: .3s;
+    }
+}
+.user-details {
+    a {
+        color: #737373;
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+    a:hover {
+        color: $primaryColor;
+        transition: .3s;
+    }
+}
+.user-details span path {
+    color: red;
+}

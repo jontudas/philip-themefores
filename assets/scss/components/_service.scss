@@ -1,0 +1,73 @@
+
+@use '../abstracts/variables' as *;
+
+/*
+************
+*************************
+02. service area
+******************************************************* 
+*************************************************************** */
+
+
+
+
+.philip-service {
+    padding: 72px 72px 67px 72px;
+    text-align: center;
+  }
+  .philip-service span {
+    font-size: 60px;
+    color: #161616;
+    font-weight: 400;
+  }
+ .philip-service-item span {
+    color: #5F41FF;
+    transition: .3s;
+  }
+  .philip-service:hover .philip-service-content h3 {
+    color: #5F41FF;
+    transition: .3s;
+  }
+  .box-border {
+    border: 1px solid #EEEEEE;
+  }
+  .box-border:nth-child(3n+0){
+    border-right: 0px;
+    border-left: 0px;
+  }
+  .box-border:nth-child(3n+1){
+    border-left: 0px;
+    border-right: 0;
+  }
+  .box-border:nth-last-child(n+3) {
+    border-top: 0px;
+  }
+  .box-border:nth-last-child(-n+3) {
+    border-bottom: 0px;
+  }
+  .box-border:nth-last-child(-n+2) {
+    border-top: 0px;
+  }
+  .philip-service-item span path {
+    fill: #5F41FF;
+    transition: 0.3s;
+  }
+  .philip-service h3 {
+    font-size: 24px;
+    color: #161616;
+    font-weight: 400;
+    margin-top: 43px;
+  }
+  .philip-service-content p {
+    color: #737373;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+.hoverinner-content li:nth-child(1) {
+  margin-right: 20px;
+}
+.hoverinner-content li span {
+  font-size: 30px;
+}
+  

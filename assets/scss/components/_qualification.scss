@@ -1,0 +1,179 @@
+@use '../abstracts/variables' as *;
+
+/*
+************
+*************************
+02. qualification area
+******************************************************* 
+*************************************************************** */
+
+.philip-qualification-box {
+	padding: 31px 31px 58px 31px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.04);
+}
+.philip-qualification-box-title h3 {
+    font-size: 24px;
+    font-family: $roboto;
+    font-weight: 400;
+    color: black;
+    margin: 0;
+}
+.philip-qualification-box-title h6 {
+    font-size: 12px;
+    font-family: $dmSans;
+    font-weight: 400;
+    color: #737373;
+    margin-top: 9px;
+    margin-bottom: 0;
+}
+.philip-qualification-box-content p {
+    font-size: 16px;
+    font-family: $dmSans;;
+    font-weight: 400;
+    color: #737373;
+    margin-top: 27px;
+    margin-bottom: 0;
+}
+.qua-button {
+	background: #F6F6F6;
+	padding: 44px;
+	display: inline-block;
+	border-radius: 50%;
+}
+.qualification-button span path {
+    fill: #5F41FF;
+  }
+  .philip-available {
+	background-image: url("../img/avaliable/image.jpg");
+	background-repeat: no-repeat;
+	position: relative;
+	background-size: cover;
+	padding-top: 105px;
+	padding-bottom: 87px;
+	padding-left: 70px;
+	padding-right: 196px;
+	border-radius: 11px;
+}
+// .philip-available::before {
+// 	content: '';
+// 	display: block;
+// 	height: 100%;
+// 	width: 100%;
+// 	background: #0000008f;
+// 	position: absolute;
+// }
+// .philip-available-content {
+// 	padding: 104px 196px 87px 70px;
+// }
+.philip-available-content h6 {
+    font-size: 16px;
+    margin: 0;
+    font-family: $dmSans;
+    font-weight: 600px;
+    color: #fff;
+}
+.philip-available-content h3 {
+    font-size: 40px;
+    font-family: $roboto;;
+    color: #fff;
+    margin-top: 9px;
+    margin-bottom: 0;
+}
+.philip-available-content p {
+    font-size: 16px;
+    font-family: $nunito;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: #DFDFDF;
+}
+
+.philip-available-content .philip-button2 a {
+    background-color: transparent;
+	color: #fff;
+	height: 60px;
+	width: 150px;
+    border: 1px solid #ffffff;
+	font-family: "Nunito Sans", sans-serif;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 8px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+.philip-available-content .philip-button2 a:hover {
+    background-color: #5F41FF;
+    color: #fff;
+    border: 1px solid #5F41FF;
+    transition: 0.5s;
+}
+.philip-qualification-box.has-pos {
+    position: absolute;
+    bottom: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+    background-color: #fff;
+    left: 0;
+}
+.philip-qa-button-sm-arrow-1 a {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: #fff;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.04));
+    text-align: center;
+    line-height: 46px;
+    &:hover {
+        background-color: #5F41FF;
+        & i {
+            color: #fff;
+        }
+    }
+}
+.philip-qa-button-sm-arrow-1.has-pos a {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 999;
+}
+.philip-qualification-card {
+    position: relative;
+    &:hover {
+        & .philip-qualification-box.has-pos {
+            bottom: 0;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &.has-cart-bottom {
+        & .philip-qa-button-sm-arrow-1.has-pos a {
+            bottom: auto;
+            top: 0;
+            transform: translateY(-50%) translateX(-50%);
+            color: #5F41FF;
+            font-size: 20px;
+            & i {
+                font-weight: 500;
+                transition: all .3s;
+            }
+        }
+        & .philip-qualification-box.has-pos {
+            bottom: auto;
+            top: 30px;
+        }
+        &:hover {
+            & .philip-qualification-box.has-pos {
+                top: 0;
+                bottom: auto;
+            }
+        }
+    }
+}
