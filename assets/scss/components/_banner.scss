@@ -66,6 +66,10 @@
     border: 1px solid #5F41Ff;
     transition: .5s;
   }
+  .philip-button:hover svg path {
+    fill: #5F41FF;
+    transition: .5s;
+  }
   .video-button span {
     border: 10px solid #4168FF12;
     background: #f000;

@@ -38,6 +38,10 @@
       .philip-available-content h3 {
         font-size: 34px;
       }
+      .phlip-review-area  .phlip-review-image.ml-60 {
+        text-align: center;
+        margin-left: 0;
+      }
   }
   @media(max-width: 992px) {
     .philip-header-area {
@@ -115,11 +119,11 @@
       .philip-footer-title {
         margin-top: 60px;
       }
-   
-  
   }
   @media(max-width: 576px) {
     .philip-section-heading {
       font-size: 31px;
     }
   }
+  /* responsive about page   */
+

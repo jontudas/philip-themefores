@@ -1,0 +1,321 @@
+
+@use '../abstracts/variables' as *;
+
+/*
+************
+*************************
+02. About area
+******************************************************* 
+*************************************************************** */
+.philip-banner-section {
+	position: relative;
+    z-index: 9;
+}
+.philip-banner-section::after {
+	content: '';
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: #040404ab;
+	position: absolute;
+	top: 0;
+    z-index: -1;
+}
+.philip-breadcrumb-content {
+    h2 {
+        font-size: 60px;
+        color: #fff;
+        font-weight: bold;
+        text-transform: capitalize;
+        margin: 0;
+    }
+    nav ul li {
+        list-style: none;
+    }
+    nav ul li a {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+    nav ul li a:hover {
+        color: #B9B9B9;
+        transition: .3s;
+    }
+    nav ul li:nth-child(1) {
+        margin-right: 22px;
+    }
+    
+}
+.after {
+    position: relative;
+}
+.after::after {
+	content: "";
+	display: block;
+	background: #B9B9B9;
+	height: 10px;
+	width: 1px;
+	position: absolute;
+	top: 9px;
+	right: -11px;
+}
+
+.philip-portfolio-button .philip-button a {
+	background-color: #EFEFEF;
+	color: #393838;
+	height: 60px;
+	width: 200px;
+	font-family: "Nunito Sans", sans-serif;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 8px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	border: 1px solid #EFEFEF;
+}
+
+.philip-portfolio-button .philip-button a:hover {
+	background-color: #5F41FF;
+    color: #fff;
+    border: 1px solid #5F41FF;
+    transition: .3s;
+}
+
+
+// philip about css 
+
+.philip-section-content {
+	margin-top: 26px;
+}
+.philip-about-section .philip-about-image-content {
+	background-color: #EFEFEF;
+    padding: 0px 30px 0px 30px;
+    border-radius: 8px;
+}
+.philip-parsonal-content {
+        padding-top: 41px;
+        padding-bottom: 42px;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-top: -122px;
+    h3 {
+        font-size: 24px;
+        color: #393838;
+        text-transform: capitalize;
+        font-family: $roboto;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    p {
+        font-size: 16px;
+        color: #717171;
+        text-transform: capitalize;
+        margin-bottom: 0;
+    }
+}
+.philip-about-section .philip-about-image-content  .philip-about-image {
+    margin-right: 0;
+    border: 19px solid white;
+    border-radius: 8px;
+    text-align: center;
+    transform: translateY(-124px);
+	background: #fff;
+    img {
+        width: 88%;
+    }
+  }
+
+.philip-image-area-border {
+    background: #efefef;
+    border-radius: 8px;
+}
+  .philip-about-section .philip-about-image img {
+    background: #EFEFEF;
+    padding: 82px 83px 0 83px;
+  }
+
+.philip-parsonal-social {
+    ul li {
+        list-style: none;
+    }
+    ul li:not(:last-child) {
+        margin-right: 16px;
+    }
+   ul li a {
+        color: #737373;
+        width: 35px;
+        height: 35px;
+        display: block;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #737373;
+    }
+    ul li a:hover {
+        color: #fff;
+        background-color: #5F41FF;
+        border: 1px solid #5F41FF;
+        transition: .3s;
+    }
+}
+.philip-parsonal-info  th {
+    font-size: 18px;
+    font-weight: 600;
+    color: #161616;
+    text-transform: capitalize;
+    font-family: $nunito;
+}
+.philip-parsonal-info  td {
+    font-size: 18px;
+    font-weight: 600;
+    color: #515151;
+    text-transform: capitalize;
+    font-family: $nunito;
+}
+.container.phlip-review-area-container {
+	border: 1px solid #EEEEEE;
+	border-radius: 10px;
+	padding-top: 60px;
+	padding-bottom: 128px;
+}
+table, th, td {
+    border:0px solid black;
+    border-collapse: collapse;
+  }
+  .table-space {
+	width: 65px;
+}
+
+.review-content-comment {
+    margin-right: 70px;
+    h3 {
+        font-size: 24px;
+        color: #161616;
+        font-family: $roboto;
+        font-style: italic;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+    p {
+        font-size: 16px;
+        font-family: $roboto;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+}
+.comment-admin {
+    p {
+        margin-bottom: 0;
+    }
+}
+.comment-admin p {
+    position: relative;
+}
+.comment-admin p::before {
+	content: "";
+	display: block;
+	background: #7E7E7E;
+	height: 1px;
+	width: 60px;
+	position: absolute;
+	left: -80px;
+	top: 13px;
+}
+
+.phlip-review-area .carousel-indicators [data-bs-target] {
+	background-color: #5F41FF;
+}
+.phlip-review-area .carousel-indicators {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	margin-right: 15%;
+	margin-bottom: -6rem;
+	margin-left: 15%;
+	list-style: none;
+}
+
+// work progress css
+
+.process-box-logo {
+    position: absolute;
+    top: -39px;
+    left: 111px; 
+    .progress-icon {
+        background: #E2E2E2;
+        display: inline-block;
+        border-radius: 50%;
+        height: 70px;
+        width: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.philip-work-process-box {
+        padding: 63px 40px 30px 40px;
+        border: 3px solid #E2E2E2;
+        width: 242px;
+        border-radius: 30px;
+        position: relative;
+        transition: all .3s;
+    .process-content {
+        h4 {
+            font-size: 24px;
+            font-family: $roboto;
+            color: #737373;
+            font-weight: 400;
+            text-transform: capitalize;
+        }
+    }
+}
+.philip-work-process-box:hover {
+    border: 3px solid #5F41FF;
+}
+.philip-work-process-box:hover .progress-icon {
+    background: #5F41FF;
+}
+.philip-work-process-box:hover .process-content h4 {
+    color: #161616;
+}
+.philip-work-process-box:hover .progress-icon svg path {
+    fill: #fff;
+  }
+.philip-work-process-box:hover .process-content h3 {
+      color: #161616;
+}
+
+
+.philip-work-process-box::after {
+	content: '';
+	display: block;
+	height: 3px;
+	width: 45px;
+	background: #E2E2E2;
+	position: absolute;
+	right: -47px;
+	top: 60%;
+}
+.process-content h3 {
+    color: #7A7A7A;
+    font-size: 34px;
+    font-family: $roboto;
+    font-weight: bold;
+	position: absolute;
+	right: -48px;
+	top: 22%;
+}
