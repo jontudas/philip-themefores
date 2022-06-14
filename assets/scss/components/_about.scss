@@ -7,19 +7,17 @@
 02. About area
 ******************************************************* 
 *************************************************************** */
-
-
 .philip-about-image {
     text-align: right;
-    margin-right: 50px;
     position: relative;
+    img {
+      background: #EFEFEF;
+      padding: 56px 83px 0 83px;
+    }
+    img {
+      max-width: 100%;
+    }
   }
-  
-  .philip-about-image img {
-    background: #EFEFEF;
-    padding: 56px 83px 0 83px;
-  }
-  
   .content-box {
     background-color: #fff;
     display: inline-block;
@@ -28,59 +26,53 @@
     padding: 20px;
     border-radius: 16px;
     -webkit-box-shadow: -12px 12px 0px -2px;
-            box-shadow: -12px 12px 0px -2px;
+    box-shadow: -12px 12px 0px -2px;
     position: absolute;
     bottom: 91px;
-    left: -14px;
+    left: 9px;
+    span {
+      font-size: 60px;
+      font-weight: bold;
+    }
   }
   .philip-section-heading {
     color: black;
     font-size: 60px;
     font-weight: bold;
     text-transform: capitalize;
-  }
-  .philip-section-heading {
     margin-bottom: 22px;
-  }
-  .content-box span {
-    font-size: 60px;
-    font-weight: bold;
   }
   .philip-progress-ber .philip_progress_single:not(:last-child) {
     padding-bottom: 30px;
   } 
-.philip_progress_single .progress {
-    position: relative;
-  }
-  .philip_progress_single .progress span {
-    position: absolute;
-  }
-  .progress_label h5 {
-    font-size: 18px;
-    font-weight: 400;
-    color: #707070;
-  }
+.philip_progress_single {
   .progress {
     height: 5px;
     background-color: #fff;
     border-radius: .25rem;
+    position: relative;
+    overflow: inherit;
+    span {
+      position: absolute;
+      right: 0;
+      top: -35px;
+      font-size: 18px;
+      font-weight: 400;
+      color: #4A4847;
+    }
   }
+} 
+  .progress_label {
+    h5 {
+      font-size: 18px;
+      font-weight: 400;
+      color: #707070;
+    }
+  } 
   .progress-bar {
     background-color: #5F41FF;
     height: 5px;
     border-radius: 5px;
-  }
-  .philip_progress_single .progress {
-    position: relative;
-    overflow: inherit;
-  }
-  .philip_progress_single .progress span {
-    position: absolute;
-    right: 0;
-    top: -35px;
-    font-size: 18px;
-    font-weight: 400;
-    color: #4A4847;
   }
 
 

@@ -1809,10 +1809,6 @@ input:focus::placeholder, textarea:focus::placeholder {
   background-color: #F6F6F6;
 }
 
-.philip-padding-120 {
-  padding: 120px 0;
-}
-
 /*
 ************
 *************************
@@ -1892,7 +1888,6 @@ input:focus::placeholder, textarea:focus::placeholder {
   position: relative;
   z-index: 3;
 }
-
 .philip_main_menu li a {
   display: block;
   padding: 50px 0px;
@@ -1904,7 +1899,8 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 
 .philip_main_menu li ul.sub-menu li a {
-  padding: 0;
+  padding: 10px 0;
+  margin: 0 30px;
 }
 
 .philip_main_menu li ul.sub-menu {
@@ -1915,39 +1911,17 @@ input:focus::placeholder, textarea:focus::placeholder {
   background-color: #fff;
   -webkit-box-shadow: 0px 13px 29px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 13px 29px rgba(0, 0, 0, 0.05);
-  padding: 26px 30px;
   border-top: 5px solid #5F41FF;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-.sub-menu-three {
-  background: #fff;
-  position: absolute;
-  left: 224px;
-  top: 0;
-  width: 250px;
-  -webkit-box-shadow: 0px 13px 29px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 13px 29px rgba(0, 0, 0, 0.05);
-  padding: 26px 30px;
-  border-top: 5px solid #5F41FF;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.sub-menu li:hover ul.sub-menu-three {
-  opacity: 1;
-  visibility: visible;
+  padding: 10px 0;
 }
 
 .philip_main_menu li ul.sub-menu li {
   display: block;
   margin: 0;
-  margin-bottom: 24px;
 }
 
 .philip_main_menu li ul.sub-menu li a {
@@ -1957,41 +1931,50 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 .philip_main_menu li ul.sub-menu li a:before {
   position: absolute;
-  left: 25px;
+  left: -5px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 10px;
-  height: 2px;
+  width: 7px;
+  height: 7px;
   content: "";
   background-color: #5F41FF;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   opacity: 0;
   visibility: hidden;
 }
-
 .philip_main_menu li ul.sub-menu li a:hover {
   padding-left: 15px;
 }
-
-.philip_main_menu li.has-menu-children {
-  margin-right: 43px;
+.philip_main_menu li ul.sub-menu li a:hover::before {
+  left: 0;
+  opacity: 1;
+  visibility: visible;
 }
-
-.philip_main_menu li.has-menu-children::before {
-  position: absolute;
-  right: -18px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+.philip_main_menu li ul.sub-menu li:is(.has-menu-children) > a::after {
   content: "\f107";
   font-family: "Font Awesome 5 Pro";
   font-weight: 500;
   color: #1a1a1a;
+  display: inline-block;
+  float: right;
 }
 
-.philip_main_menu li.has-menu-children:hover::before {
+.philip_main_menu li.has-menu-children > a {
+  position: relative;
+}
+.philip_main_menu li.has-menu-children > a::after {
+  content: "\f107";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 500;
+  color: #1a1a1a;
+  display: inline-block;
+  margin-left: 5px;
+}
+.philip_main_menu li.has-menu-children > a:hover::after {
   color: #5F41FF;
 }
 
@@ -1999,14 +1982,21 @@ input:focus::placeholder, textarea:focus::placeholder {
   color: #5F41FF;
 }
 
-.philip_main_menu li:hover ul.sub-menu {
+.philip_main_menu li:hover > ul.sub-menu {
   opacity: 1;
   visibility: visible;
   top: 100%;
 }
 
+.philip_main_menu li:hover > ul.sub-menu li > ul.sub-menu {
+  left: 100%;
+  right: 0;
+  top: 0;
+}
+
 .philip_main_menu li {
   margin: 0 21.5px;
+  z-index: 999;
 }
 
 .philip_quick_contact-nav {
@@ -2035,13 +2025,14 @@ input:focus::placeholder, textarea:focus::placeholder {
 *************************************************************** */
 .philip-about-image {
   text-align: right;
-  margin-right: 50px;
   position: relative;
 }
-
 .philip-about-image img {
   background: #EFEFEF;
   padding: 56px 83px 0 83px;
+}
+.philip-about-image img {
+  max-width: 100%;
 }
 
 .content-box {
@@ -2055,7 +2046,11 @@ input:focus::placeholder, textarea:focus::placeholder {
   box-shadow: -12px 12px 0px -2px;
   position: absolute;
   bottom: 91px;
-  left: -14px;
+  left: 9px;
+}
+.content-box span {
+  font-size: 60px;
+  font-weight: bold;
 }
 
 .philip-section-heading {
@@ -2063,15 +2058,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   font-size: 60px;
   font-weight: bold;
   text-transform: capitalize;
-}
-
-.philip-section-heading {
   margin-bottom: 22px;
-}
-
-.content-box span {
-  font-size: 60px;
-  font-weight: bold;
 }
 
 .philip-progress-ber .philip_progress_single:not(:last-child) {
@@ -2079,11 +2066,19 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 
 .philip_progress_single .progress {
+  height: 5px;
+  background-color: #fff;
+  border-radius: 0.25rem;
   position: relative;
+  overflow: inherit;
 }
-
 .philip_progress_single .progress span {
   position: absolute;
+  right: 0;
+  top: -35px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #4A4847;
 }
 
 .progress_label h5 {
@@ -2092,30 +2087,10 @@ input:focus::placeholder, textarea:focus::placeholder {
   color: #707070;
 }
 
-.progress {
-  height: 5px;
-  background-color: #fff;
-  border-radius: 0.25rem;
-}
-
 .progress-bar {
   background-color: #5F41FF;
   height: 5px;
   border-radius: 5px;
-}
-
-.philip_progress_single .progress {
-  position: relative;
-  overflow: inherit;
-}
-
-.philip_progress_single .progress span {
-  position: absolute;
-  right: 0;
-  top: -35px;
-  font-size: 18px;
-  font-weight: 400;
-  color: #4A4847;
 }
 
 /*
@@ -2128,8 +2103,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   padding: 72px 72px 67px 72px;
   text-align: center;
 }
-
-.philip-service span {
+.philip-service .philip-service span {
   font-size: 60px;
   color: #161616;
   font-weight: 400;
@@ -2141,7 +2115,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   transition: 0.3s;
 }
 
-.philip-service:hover .philip-service-content h3 {
+.philip-service-content h3:hover {
   color: #5F41FF;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -2183,7 +2157,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   font-size: 24px;
   color: #161616;
   font-weight: 400;
-  margin-top: 43px;
+  margin-bottom: 30px;
 }
 
 .philip-service-content p {
@@ -2192,12 +2166,10 @@ input:focus::placeholder, textarea:focus::placeholder {
   font-weight: 400;
   margin-bottom: 0;
 }
-
-.hoverinner-content li:nth-child(1) {
+.philip-service-content li:nth-child(1) {
   margin-right: 20px;
 }
-
-.hoverinner-content li span {
+.philip-service-content li span {
   font-size: 30px;
 }
 
@@ -2228,13 +2200,12 @@ input:focus::placeholder, textarea:focus::placeholder {
   color: #737373;
   font-weight: 400;
   text-transform: capitalize;
-  margin: 0;
+  margin-bottom: 5px;
 }
 
 .philip-video-watch span {
   display: block;
 }
-
 .philip-video-watch p {
   margin: 0;
 }
@@ -2247,7 +2218,6 @@ input:focus::placeholder, textarea:focus::placeholder {
   font-weight: bold;
   margin: 0;
 }
-
 .philp-heading span {
   color: #5F41FF;
 }
@@ -2273,7 +2243,6 @@ input:focus::placeholder, textarea:focus::placeholder {
           justify-content: center;
   border: 1px solid #5F41FF;
 }
-
 .philip-button a:hover {
   background-color: #fff;
   color: #5F41FF;
@@ -2315,12 +2284,10 @@ input:focus::placeholder, textarea:focus::placeholder {
   -webkit-animation: myAnim 2s infinite;
   animation: myAnim 2s infinite;
 }
-
 .philip-video-anmation .anim:nth-child(2) {
   -webkit-animation: myAnim 2s infinite 0.3s;
   animation: myAnim 2s infinite 0.3s;
 }
-
 .philip-video-anmation .anim:nth-child(3) {
   -webkit-animation: myAnim 2s infinite 0.6s;
   animation: myAnim 2s infinite 0.6s;
@@ -2330,7 +2297,6 @@ input:focus::placeholder, textarea:focus::placeholder {
   position: relative;
   width: 69px;
 }
-
 .philip-video-anmation .anim {
   text-decoration: none;
   background-color: #fff;
@@ -2424,13 +2390,11 @@ input:focus::placeholder, textarea:focus::placeholder {
 .philip-social-list li:not(:last-child) {
   margin-right: 20px;
 }
-
 .philip-social-list li a {
   color: #707070;
   font-size: 15px;
   display: inline-block;
 }
-
 .philip-social-list li a:hover {
   color: #5F41FF;
   -webkit-transition: 0.3s;
@@ -2440,7 +2404,6 @@ input:focus::placeholder, textarea:focus::placeholder {
 .philip-social p {
   position: relative;
 }
-
 .philip-social p::after {
   content: "";
   display: block;
@@ -2450,40 +2413,6 @@ input:focus::placeholder, textarea:focus::placeholder {
   left: 60px;
   top: 13px;
   position: absolute;
-}
-
-.philip-banner-image img {
-  max-width: 100%;
-}
-
-.philip-about-image {
-  text-align: right;
-  margin-right: 50px;
-  position: relative;
-}
-
-.philip-about-image img {
-  background: #EFEFEF;
-  padding: 56px 83px 0 83px;
-}
-
-.content-box {
-  background-color: #fff;
-  display: inline-block;
-  text-align: center;
-  color: #5F41FF;
-  padding: 20px;
-  border-radius: 16px;
-  -webkit-box-shadow: -12px 12px 0px -2px;
-          box-shadow: -12px 12px 0px -2px;
-  position: absolute;
-  bottom: 91px;
-  left: -14px;
-}
-
-.content-box span {
-  font-size: 60px;
-  font-weight: bold;
 }
 
 /*
@@ -2657,6 +2586,16 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 .hoverinner-content li {
   list-style: none;
+  font-size: 30px;
+  margin-right: 20px;
+}
+.hoverinner-content li:nth-child(2) {
+  margin-right: 0;
+}
+.hoverinner-content span:hover {
+  color: #5F41FF;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .philip-portfolio-item:hover .hoverinner1::before, .philip-portfolio-item:hover .hoverinner1::after, .philip-portfolio-item:hover .hoverinner2::before, .philip-portfolio-item:hover .hoverinner2::after {
@@ -2688,7 +2627,6 @@ input:focus::placeholder, textarea:focus::placeholder {
   color: black;
   margin: 0;
 }
-
 .philip-qualification-box-title h6 {
   font-size: 12px;
   font-family: "DM Sans", sans-serif;
@@ -2713,74 +2651,8 @@ input:focus::placeholder, textarea:focus::placeholder {
   display: inline-block;
   border-radius: 50%;
 }
-
-.qualification-button span path {
+.qua-button span path {
   fill: #5F41FF;
-}
-
-.philip-available {
-  background-image: url("../img/avaliable/image.jpg");
-  background-repeat: no-repeat;
-  position: relative;
-  background-size: cover;
-  padding-top: 105px;
-  padding-bottom: 87px;
-  padding-left: 70px;
-  padding-right: 196px;
-  border-radius: 11px;
-}
-
-.philip-available-content h6 {
-  font-size: 16px;
-  margin: 0;
-  font-family: "DM Sans", sans-serif;
-  font-weight: 600px;
-  color: #fff;
-}
-
-.philip-available-content h3 {
-  font-size: 40px;
-  font-family: "Roboto", sans-serif;
-  color: #fff;
-  margin-top: 9px;
-  margin-bottom: 0;
-}
-
-.philip-available-content p {
-  font-size: 16px;
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 400;
-  margin-bottom: 0;
-  color: #DFDFDF;
-}
-
-.philip-available-content .philip-button2 a {
-  background-color: transparent;
-  color: #fff;
-  height: 60px;
-  width: 150px;
-  border: 1px solid #ffffff;
-  font-family: "Nunito Sans", sans-serif;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.philip-available-content .philip-button2 a:hover {
-  background-color: #5F41FF;
-  color: #fff;
-  border: 1px solid #5F41FF;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .philip-qualification-box.has-pos {
@@ -2853,6 +2725,90 @@ input:focus::placeholder, textarea:focus::placeholder {
 /*
 ************
 *************************
+02. Available
+******************************************************* 
+*************************************************************** */
+.philip-available {
+  background-image: url("../img/avaliable/image.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  padding-top: 105px;
+  padding-bottom: 87px;
+  padding-left: 70px;
+  padding-right: 165px;
+  border-radius: 11px;
+}
+
+.philip-available-content h6 {
+  font-size: 16px;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600px;
+  color: #fff;
+}
+.philip-available-content h3 {
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  margin-top: 7px;
+  margin-bottom: 0;
+}
+.philip-available-content p {
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: #DFDFDF;
+}
+.philip-available-content .philip-button2 a {
+  background-color: transparent;
+  color: #fff;
+  height: 60px;
+  width: 150px;
+  border: 1px solid #ffffff;
+  font-family: "Nunito Sans", sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.philip-available-content .philip-button2 a:hover {
+  background-color: #5F41FF;
+  color: #fff;
+  border: 1px solid #5F41FF;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.philip-available-area .philip-section-heading {
+  margin-bottom: 30px;
+}
+
+/*
+************
+*************************
+23. brand
+******************************************************* 
+*************************************************************** */
+.philip-brand-icon:hover svg path {
+  fill: #5F41FF;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/*
+************
+*************************
 23. blog
 ******************************************************* 
 *************************************************************** */
@@ -2865,6 +2821,9 @@ input:focus::placeholder, textarea:focus::placeholder {
   border: 1px solid white;
 }
 
+.philip-blog-content {
+  padding: 28px 30px 30px 30px;
+}
 .philip-blog-content p {
   color: #737373;
   font-size: 14px;
@@ -2880,10 +2839,6 @@ input:focus::placeholder, textarea:focus::placeholder {
           transform: scale(1.2);
   -webkit-transition: all 2s;
   transition: all 2s;
-}
-
-.philip-blog-content {
-  padding: 28px 30px 30px 30px;
 }
 
 .philip-blog-title a {
@@ -2920,7 +2875,6 @@ input:focus::placeholder, textarea:focus::placeholder {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 .user-details a:hover span path {
   fill: #5F41FF;
 }
@@ -2945,6 +2899,10 @@ input:focus::placeholder, textarea:focus::placeholder {
   font-family: "Roboto", sans-serif;
   text-transform: capitalize;
   margin: 0;
+}
+
+.philip-testimonial-box .philip-section-heading {
+  margin-bottom: 0;
 }
 
 .philip-testimonial-user p {
@@ -2975,6 +2933,10 @@ input:focus::placeholder, textarea:focus::placeholder {
   width: 40px;
   height: 5px;
   border-radius: 0%;
+}
+
+.carousel-indicators {
+  margin-bottom: -1rem;
 }
 
 /*
@@ -3010,6 +2972,17 @@ input:focus::placeholder, textarea:focus::placeholder {
   color: #737373;
   font-size: 16px;
   font-weight: 400;
+  display: block;
+}
+.content a {
+  margin: 0;
+  color: #737373;
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+}
+.content a:hover {
+  color: #5F41FF;
 }
 
 .info-content:not(:last-child) {
@@ -3081,13 +3054,6 @@ input:focus::placeholder, textarea:focus::placeholder {
   padding: 0 30px;
   border: 0;
 }
-.philip-contact-from .has-nice-select::after {
-  display: none;
-}
-.philip-contact-from .has-nice-select:hover {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
 .philip-contact-from .has-nice-select .list {
   width: 100%;
 }
@@ -3096,7 +3062,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   font-size: 14px;
 }
 
-.philip-contact-from input, select, textarea {
+.philip-contact-from input, .philip-contact-from select, .philip-contact-from textarea {
   height: 60px;
   padding-left: 30px;
   border: 0px;
@@ -3107,7 +3073,6 @@ input:focus::placeholder, textarea:focus::placeholder {
   padding-left: 30px;
   border: 0px;
 }
-
 .philip-contact-from textarea {
   height: 120px;
   padding-left: 30px;
@@ -3204,10 +3169,6 @@ input:focus::placeholder, textarea:focus::placeholder {
   border: 1px solid #5F41FF;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-.philip-section-content {
-  margin-top: 26px;
 }
 
 .philip-about-section .philip-about-image-content {
@@ -3470,73 +3431,12 @@ table, th, td {
 23. Counter
 ******************************************************* 
 *************************************************************** */
-@media (max-width: 1200px) {
-  .philip-header-area {
-    padding: 48px 36px;
-  }
-}
 /*
 ************
 *************************
 04. Section Title
 ******************************************************* 
 *************************************************************** */
-.theme_clr {
-  color: #f94d1c;
-}
-
-@media (max-width: 767px) {
-  br {
-    display: none;
-  }
-}
-
-.cinkes_sub_title {
-  position: relative;
-  display: inline-block;
-  font-size: 20px;
-}
-@media (max-width: 767px) {
-  .cinkes_sub_title {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 767px) {
-  .cinkes_title {
-    font-size: 33px;
-  }
-}
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .cinkes_title {
-    font-size: 38px;
-  }
-}
-
-.cinkes_sub_title:before {
-  position: absolute;
-  left: calc(100% + 20px);
-  top: 50%;
-  width: 40px;
-  content: "";
-  height: 3px;
-  background-color: #f94d1c;
-}
-
-.cinkes_sub_title:after {
-  position: absolute;
-  right: calc(100% + 20px);
-  top: 50%;
-  width: 40px;
-  content: "";
-  height: 3px;
-  background-color: #f94d1c;
-}
-
-.theme_clr:before {
-  background-color: #f94d1c;
-}
-
 /*
 ************
 *************************
@@ -3867,7 +3767,12 @@ footer {
 .header-menu-top-icon a {
   display: block;
   font-size: 16px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+}
+.header-menu-top-icon a:hover {
+  color: #5F41FF;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .header-menu-top-icon i {
   margin-right: 10px;
@@ -3876,8 +3781,9 @@ footer {
 
 .edu-four-btn {
   display: inline-block;
-  height: 50px;
-  line-height: 50px;
+  height: 60px;
+  width: 200px;
+  line-height: 56px;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
@@ -3890,7 +3796,9 @@ footer {
   border: 1px solid transparent;
 }
 .edu-four-btn:hover {
-  color: #fff;
+  color: #5F41FF;
+  background-color: #fff;
+  border: 1px solid #5F41FF;
 }
 
 .offcanvas-overlay {

@@ -307,7 +307,7 @@ $('.popup-image').magnificPopup({
 $('.popup-video').magnificPopup({
 	type: 'iframe'
 });
-$('.has-nice-select').niceSelect();
+$('.philip-contact-from select').niceSelect();
 // data background
 $("[data-background").each(function(){
 	$(this).css("background-image","url("+$(this).attr("data-background") + ") ")

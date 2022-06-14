@@ -16,10 +16,13 @@
 	overflow: hidden;
 	border: 1px solid white;
 }
-.philip-blog-content p {
-    color: $textColor;
-    font-size: 14px;
-    margin: 0;
+.philip-blog-content {
+    padding: 28px 30px 30px 30px;
+    p {
+        color: $textColor;
+        font-size: 14px;
+        margin: 0;
+    }
 }
 .philip-blog-image {
 	overflow: hidden;
@@ -29,9 +32,6 @@
 	transition: all 2s;
 }
                   
-.philip-blog-content {
-	padding: 28px 30px 30px 30px;
-}
 .philip-blog-title {
     a {
         font-size: 24px;
@@ -66,8 +66,7 @@
         color: $primaryColor;
         transition: .3s;
     }
-
-}
-.user-details a:hover span path {
-    fill: $primaryColor;
+    a:hover span path {
+        fill: $primaryColor;
+    }
 }

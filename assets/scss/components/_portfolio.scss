@@ -14,7 +14,6 @@
    width: 100%;
   }
 
-
 //   try 
 
 .portfolio_designer_id_77 .portfolio_single_wrapp .portfolio_single_wrap_box {
@@ -145,11 +144,25 @@
     bottom: 50px;
     right: 76px;
 }
-  .hoverinner-content h4 {
-	  color: #fff;
+  .hoverinner-content {
+	h4 {
+		color: #fff;
+	} 
   } 
-  .hoverinner-content li {
-	  list-style: none;
+  .hoverinner-content {
+	li {
+		list-style: none;
+		font-size: 30px;
+		margin-right: 20px;
+	}
+	li:nth-child(2) {
+		margin-right: 0;
+	}
+	
+	span:hover {
+		color: $primaryColor;
+		transition: all .3s;
+	  }
   }
   .philip-portfolio-item:hover .hoverinner1, .philip-portfolio-item:hover .hoverinner2 {
 	&::before, &::after {

@@ -12,6 +12,17 @@
         color: $textColor;
         font-size: 16px;
         font-weight: 400;
+        display: block;
+    };;
+    a {
+        margin: 0;
+        color: $textColor;
+        font-size: 16px;
+        font-weight: 400;
+        display: block;
+    }
+    a:hover {
+        color: $primaryColor;
     }
 }
 .info-content:not(:last-child) {
@@ -75,12 +86,6 @@
         line-height: 60px;
         padding: 0 30px;
         border: 0;
-        &::after {
-            display: none;
-        }
-        &:hover {
-            box-shadow: none;
-        }
         & .list {
             width: 100%;
         }
@@ -90,19 +95,24 @@
         }
     }
 }
-.philip-contact-from input,select, textarea {
-    height: 60px;
-    padding-left: 30px;
-    border: 0px;
-  }
-  .philip-contact-from select {
-    height: 60px;
-    padding-left: 30px;
-    border: 0px;
-  }
-  .philip-contact-from textarea {
-    height: 120px;
-    padding-left: 30px;
-    border: 0px;
-    padding-top: 20px;
-  }
+.philip-contact-from {
+    input,select, textarea {
+        height: 60px;
+        padding-left: 30px;
+        border: 0px;
+      }
+} 
+  .philip-contact-from {
+    select {
+        height: 60px;
+        padding-left: 30px;
+        border: 0px;
+      }
+      textarea {
+        height: 120px;
+        padding-left: 30px;
+        border: 0px;
+        padding-top: 20px;
+      }
+  } 
+
